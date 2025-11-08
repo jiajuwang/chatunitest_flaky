@@ -1,0 +1,1280 @@
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T032047Z/history2025_10_23_21_46_06/class37/method33/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 69 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 69 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 56 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 69 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 70 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 56 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 69 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 70 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 56 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 69 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 70 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+(ambiguous > private void add())
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T032047Z/history2025_10_23_21_46_06/class37/method34/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 37 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 37 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 55 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 37 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 37 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 55 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 36 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 36 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 43 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 54 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 67 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 55 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 55 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+(private add > imcompatible type, ambiguous)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T032047Z/history2025_10_23_21_46_06/class37/method58/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 52 : cannot find symbol
+  symbol:   method setDeprecated(boolean)
+  location: variable deprecatedOption of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 62 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 61 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 61 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 61 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 61 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+(ambiguous> setDeprecated)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T050124Z/commons-cli/history2025_10_24_00_01_25/class37/method23/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getOptionValue_23_4_Test: line 62 : reference to getOptionValue is ambiguous
+  both method getOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method getOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getOptionValue_23_4_Test: line 62 : reference to getOptionValue is ambiguous
+  both method getOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method getOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getOptionValue_23_4_Test: line 62 : reference to getOptionValue is ambiguous
+  both method getOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method getOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getOptionValue_23_4_Test: line 62 : reference to getOptionValue is ambiguous
+  both method getOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method getOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValues_46_1_Test: line 39 : reference to getParsedOptionValues is ambiguous
+  both method <T>getParsedOptionValues(org.apache.commons.cli.OptionGroup,java.util.function.Supplier<T[]>) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValues(java.lang.String,java.util.function.Supplier<T[]>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValues_46_1_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValues_46_1_Test: line 58 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValues_46_1_Test: line 70 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValues_46_1_Test: line 87 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+(ambiguous, private void add)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T050124Z/commons-cli/history2025_10_24_00_01_25/class37/method26/attempt4/records.json
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T050124Z/commons-cli/history2025_10_24_00_01_25/class37/method33/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 55 : cannot find symbol
+  symbol:   method setValue(java.lang.String)
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 56 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 66 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 67 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 69 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 70 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 73 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 73 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 71 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+(ambiguous, private void add)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T050124Z/commons-cli/history2025_10_24_00_01_25/class37/method34/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 39 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 49 : cannot find symbol
+  symbol:   method setOptionValue(org.apache.commons.cli.Option,<nulltype>)
+  location: variable commandLine of type org.apache.commons.cli.CommandLine
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 59 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 61 : cannot find symbol
+  symbol:   method setOptionValue(org.apache.commons.cli.Option,java.lang.String)
+  location: variable commandLine of type org.apache.commons.cli.CommandLine
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 72 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : CommandLine_getParsedOptionValue_34_4_Test.java uses unchecked or unsafe operations.
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : Recompile with -Xlint:unchecked for details.
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : CommandLine_getParsedOptionValue_34_4_Test.java uses unchecked or unsafe operations.
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : Recompile with -Xlint:unchecked for details.
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : CommandLine_getParsedOptionValue_34_4_Test.java uses unchecked or unsafe operations.
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : Recompile with -Xlint:unchecked for details.
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 40 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : CommandLine_getParsedOptionValue_34_4_Test.java uses unchecked or unsafe operations.
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line -1 : Recompile with -Xlint:unchecked for details.
+(ambiguous, imcompatible bound, unsafe operation)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T050124Z/commons-cli/history2025_10_24_00_01_25/class37/method58/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 56 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 67 : cannot find symbol
+  symbol:   method setDeprecated(boolean)
+  location: variable deprecatedOption of type org.apache.commons.cli.Option
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 56 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 56 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 56 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 56 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+(ambiguous, setDeprecated)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T053523Z/commons-cli/history2025_10_24_00_35_25/class37/method33/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 52 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 52 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 52 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 45 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 53 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 38 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 44 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_33_4_Test: line 52 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+(ambiguous, private add)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T053523Z/commons-cli/history2025_10_24_00_35_25/class37/method34/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 39 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 55 : cannot find symbol
+  symbol:   method add(java.lang.String)
+  location: class java.lang.String[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 56 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 66 : cannot find symbol
+  symbol:   method add(java.lang.String)
+  location: class java.lang.String[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 67 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 69 : incompatible types: inference variable T has incompatible bounds
+    equality constraints: java.lang.String
+    upper bounds: java.lang.Number,java.lang.Object
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 77 : cannot find symbol
+  symbol:   method add(java.lang.String)
+  location: class java.lang.String[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 78 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 39 : reference to getParsedOptionValue is ambiguous
+  both method <T>getParsedOptionValue(org.apache.commons.cli.OptionGroup,T) in org.apache.commons.cli.CommandLine and method <T>getParsedOptionValue(java.lang.String,java.util.function.Supplier<T>) in org.apache.commons.cli.CommandLine match
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 39 : incompatible types: inference variable T has incompatible bounds
+    upper bounds: java.lang.String,java.lang.Object
+    lower bounds: java.util.function.Supplier<java.lang.String>
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 46 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 55 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 56 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 66 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 67 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 69 : incompatible types: inference variable T has incompatible bounds
+    equality constraints: java.lang.String
+    upper bounds: java.lang.Number,java.lang.Object
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 77 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 78 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 47 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 56 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 67 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 70 : incompatible types: inference variable T has incompatible bounds
+    equality constraints: java.lang.String
+    upper bounds: java.lang.Number,java.lang.Object
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 78 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 79 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 47 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 56 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 67 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 70 : incompatible types: inference variable T has incompatible bounds
+    equality constraints: java.lang.String
+    upper bounds: java.lang.Number,java.lang.Object
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 78 : cannot find symbol
+  symbol:   method setValues(java.lang.String[])
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 79 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 47 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 56 : cannot find symbol
+  symbol:   method setValue(java.lang.String)
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 57 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 67 : cannot find symbol
+  symbol:   method setValue(java.lang.String)
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 68 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 70 : incompatible types: inference variable T has incompatible bounds
+    equality constraints: java.lang.String
+    upper bounds: java.lang.Number,java.lang.Object
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 78 : cannot find symbol
+  symbol:   method setValue(java.lang.String)
+  location: variable option of type org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_getParsedOptionValue_34_4_Test: line 79 : cannot find symbol
+  symbol:   method add(org.apache.commons.cli.Option)
+  location: class org.apache.commons.cli.Option[]
+(imcompatible type, private add)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T053523Z/commons-cli/history2025_10_24_00_35_25/class37/method58/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 36 : cannot find symbol
+  symbol:   method setDeprecated(boolean)
+  location: class org.apache.commons.cli.Option
+
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 65 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 63 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 63 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 61 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CommandLine_hasOption_58_4_Test: line 61 : reference to hasOption is ambiguous
+  both method hasOption(org.apache.commons.cli.OptionGroup) in org.apache.commons.cli.CommandLine and method hasOption(java.lang.String) in org.apache.commons.cli.CommandLine match
+(ambiguous, private)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T055208Z/commons-cli/history2025_10_24_00_52_09/class31/method22/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 27 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 34 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 27 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 34 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 27 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 34 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 27 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 34 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 27 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in DefaultParser_parse_22_4_Test: line 34 : cannot find symbol
+  symbol:   class NonOptionAction
+  location: class org.apache.commons.cli.DefaultParser_parse_22_4_Test
+(class not find)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T162712Z/commons-csv/history2025_10_24_11_27_14/class8/method8/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 70 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : CSVParser_close_8_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 71 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : CSVParser_close_8_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=2
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 55 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.Lexer
+Mockito cannot mock/spy because :
+ - final class
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 77 : cannot inherit from final org.apache.commons.csv.Lexer
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 77 : constructor Lexer in class org.apache.commons.csv.Lexer cannot be applied to given types;
+  required: org.apache.commons.csv.CSVFormat,org.apache.commons.csv.ExtendedBufferedReader
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : CSVParser_close_8_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 83 : cannot inherit from final org.apache.commons.csv.Lexer
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 87 : constructor CSVFormat in class org.apache.commons.csv.CSVFormat cannot be applied to given types;
+  required: org.apache.commons.csv.CSVFormat.Builder
+  found: no arguments
+  reason: actual and formal argument lists differ in length
+(can't inherit from final, deprecated API)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T172712Z/commons-cli/history2025_10_24_12_27_28/class3/method24/attempt4/records.json
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T183043Z/commons-csv/history2025_10_24_13_31_02/class8/method8/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 64 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : CSVParser_close_8_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T183715Z/commons-csv/history2025_10_24_13_37_31/class8/method8/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 62 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : CSVParser_close_8_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=1
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 56 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.Lexer
+Mockito cannot mock/spy because :
+ - final class
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 61 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 61 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 61 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in CSVParser_close_8_4_Test: line 66 : cannot find symbol
+  symbol:   class var
+  location: class org.apache.commons.csv.CSVParser_close_8_4_Test
+(final class, symbol var)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T190513Z/commons-csv/history2025_10_24_14_05_29/class0/method0/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 42 : reference to get is ambiguous
+  both method get(java.lang.Enum<?>) in org.apache.commons.csv.CSVRecord and method get(java.lang.String) in org.apache.commons.csv.CSVRecord match
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 67 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 83 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 41 : reference to get is ambiguous
+  both method get(java.lang.Enum<?>) in org.apache.commons.csv.CSVRecord and method get(java.lang.String) in org.apache.commons.csv.CSVRecord match
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 64 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 78 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+attempt=4 round=2
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 41 : reference to get is ambiguous
+  both method get(java.lang.Enum<?>) in org.apache.commons.csv.CSVRecord and method get(java.lang.String) in org.apache.commons.csv.CSVRecord match
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 64 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 78 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 41 : reference to get is ambiguous
+  both method get(java.lang.Enum<?>) in org.apache.commons.csv.CSVRecord and method get(java.lang.String) in org.apache.commons.csv.CSVRecord match
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 64 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 78 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 41 : reference to get is ambiguous
+  both method get(java.lang.Enum<?>) in org.apache.commons.csv.CSVRecord and method get(java.lang.String) in org.apache.commons.csv.CSVRecord match
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 64 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 78 : cannot find symbol
+  symbol:   method of(java.lang.String,int)
+  location: interface java.util.Map
+(ambiguous, method of)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251024T191302Z/commons-csv/history2025_10_24_14_13_19/class0/method0/attempt4/records.json
+attempt=4 round=0
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 30 : cannot find symbol
+  symbol:   class StringReader
+  location: class org.apache.commons.csv.CSVRecord_get_0_4_Test
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : CSVRecord_get_0_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=1
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 31 : unreported exception java.io.IOException; must be caught or declared to be thrown
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : CSVRecord_get_0_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=2
+errorType=RUNTIME_ERROR
+message=Error in testGetWithInvalidEnum(): line 53 : org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.reflect.InvocationTargetException>
+
+errorType=RUNTIME_ERROR
+message=Error in testGetWithValidEnum(): line 59 : java.lang.IllegalStateException: No header mapping was specified, the record values can't be accessed by name
+
+errorType=RUNTIME_ERROR
+message=Error in testGetWithValidEnum(): line 40 : java.lang.IllegalStateException: No header mapping was specified, the record values can't be accessed by name
+
+errorType=RUNTIME_ERROR
+message=Error in testGetWithNullEnum(): line 59 : java.lang.IllegalStateException: No header mapping was specified, the record values can't be accessed by name
+
+errorType=RUNTIME_ERROR
+message=Error in testGetWithNullEnum(): line 46 : java.lang.IllegalStateException: No header mapping was specified, the record values can't be accessed by name
+
+attempt=4 round=3
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 35 : unreported exception java.lang.Exception; must be caught or declared to be thrown
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : CSVRecord_get_0_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+
+attempt=4 round=4
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line 35 : unreported exception java.lang.Exception; must be caught or declared to be thrown
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : CSVRecord_get_0_4_Test.java uses or overrides a deprecated API.
+
+errorType=COMPILE_ERROR
+message=Error in CSVRecord_get_0_4_Test: line -1 : Recompile with -Xlint:deprecation for details.
+(deprecated API, unreported exception)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251105T190452Z/commons-csv/history2025_11_05_13_05_11/class1/method1/attempt4/records.json
+attempt=4 round=0
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 28 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+errorType=RUNTIME_ERROR
+message=Error in testCloseThrowsIOException(): line 28 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+attempt=4 round=1
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+errorType=RUNTIME_ERROR
+message=Error in testCloseThrowsIOException(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+attempt=4 round=2
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+errorType=RUNTIME_ERROR
+message=Error in testCloseThrowsIOException(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+attempt=4 round=3
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+errorType=RUNTIME_ERROR
+message=Error in testCloseThrowsIOException(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+attempt=4 round=4
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+errorType=RUNTIME_ERROR
+message=Error in testCloseThrowsIOException(): line 29 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+(final)
+
+PATH: /home/wangjeffrey4/chatunitest_backups/20251106T233839Z/commons-csv/history2025_11_06_17_38_57/class1/method1/attempt4/records.json
+attempt=4 round=0
+errorType=RUNTIME_ERROR
+message=Error in testClose(): line 26 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+
+errorType=RUNTIME_ERROR
+message=Error in testCloseThrowsIOException(): line 26 : org.mockito.exceptions.base.MockitoException: 
+Cannot mock/spy class org.apache.commons.csv.ExtendedBufferedReader
+Mockito cannot mock/spy because :
+ - final class
+(final)

@@ -7,6 +7,8 @@ Annotate CSV rows with two new columns:
 Usage: run from the workspace root. It reads `quality_summary - Copy.csv` in the
 same directory and writes `quality_summary - Copy.with_counts.csv` next to it.
 """
+
+# python3 annotate_counts.py
 import csv
 import json
 import os
@@ -134,6 +136,56 @@ def count_prompts(history_dir: Path) -> int:
     return total
 
 
+def count_class_methods(run_dir: Path, project_name: str = None, target_class: str = None) -> int:
+    """Count number of methods in the specific target class's class.json file.
+    
+    Args:
+        run_dir: The run directory (e.g., 20251024T050124Z)
+        project_name: The project name (e.g., commons-cli)
+        target_class: The target class name (e.g., CommandLine, DefaultParser)
+    
+    Returns:
+        Number of methods in the target class's methodSigs, or 0 if not found
+    """
+    if not run_dir.exists() or not target_class:
+        return 0
+    
+    # Look for class-info directory inside run_dir/project_name/class-info
+    class_info_dir = None
+    if project_name:
+        candidate = run_dir / os.path.basename(project_name) / 'class-info'
+        if candidate.exists() and candidate.is_dir():
+            class_info_dir = candidate
+    
+    # Fallback: search for class-info directly under run_dir
+    if class_info_dir is None:
+        for p in run_dir.iterdir():
+            if p.is_dir():
+                candidate = p / 'class-info'
+                if candidate.exists() and candidate.is_dir():
+                    class_info_dir = candidate
+                    break
+    
+    if class_info_dir is None:
+        return 0
+    
+    # Search for the specific target class's class.json file
+    # The pattern is: class-info/.../TargetClassName/class.json
+    for class_json_path in class_info_dir.rglob('class.json'):
+        # Check if this is the target class by checking parent directory name
+        if class_json_path.parent.name == target_class:
+            try:
+                with class_json_path.open('r') as f:
+                    data = json.load(f)
+                    # Count entries in methodSigs dictionary
+                    if 'methodSigs' in data and isinstance(data['methodSigs'], dict):
+                        return len(data['methodSigs'])
+            except Exception:
+                continue
+    
+    return 0
+
+
 def find_history_dir(run_dir: Path, project_name: str = None) -> Path:
     # look for any subdirectory starting with 'history'
     # If project_name is provided, prefer run_dir/project_name/history*
@@ -164,13 +216,28 @@ def main():
     with CSV_IN.open(newline='') as fh:
         reader = csv.DictReader(fh)
         fieldnames = reader.fieldnames[:] if reader.fieldnames else []
-        # add new columns if not present
+        
+        # Remove unwanted columns if they exist
+        for col in ['total_generated_tests', 'flaky_rate_pct', 'pit_path', 'jacoco_path', 'idflakies_candidates']:
+            if col in fieldnames:
+                fieldnames.remove(col)
+        
+        # Add num_class_methods right after flaky_count if not present
+        if 'num_class_methods' not in fieldnames:
+            if 'flaky_count' in fieldnames:
+                idx = fieldnames.index('flaky_count') + 1
+                fieldnames.insert(idx, 'num_class_methods')
+            else:
+                fieldnames.append('num_class_methods')
+        
+        # Add other count columns at the end if not present
         if 'num_test_methods' not in fieldnames:
             fieldnames.append('num_test_methods')
         if 'num_chatgpt_prompts' not in fieldnames:
             fieldnames.append('num_chatgpt_prompts')
         if 'num_test_files' not in fieldnames:
             fieldnames.append('num_test_files')
+        
         for r in reader:
             rows.append(r)
 
@@ -189,12 +256,15 @@ def main():
             test_dir = run_dir / 'chatunitest-tests'
             # prefer history inside the project's folder if project_root is provided
             project_root = r.get('project_root') if isinstance(r, dict) else None
+            target_class = r.get('target_class') if isinstance(r, dict) else None
             history_dir = find_history_dir(run_dir, project_root)
 
             num_tests = count_tests(test_dir)
             num_prompts = count_prompts(history_dir)
             num_files = count_test_files(test_dir)
+            num_class_methods = count_class_methods(run_dir, project_root, target_class)
 
+            r['num_class_methods'] = str(num_class_methods)
             r['num_test_methods'] = str(num_tests)
             r['num_chatgpt_prompts'] = str(num_prompts)
             r['num_test_files'] = str(num_files)
@@ -215,12 +285,15 @@ def main():
 
             test_dir = run_dir / 'chatunitest-tests'
             project_root = r.get('project_root') if isinstance(r, dict) else None
+            target_class = r.get('target_class') if isinstance(r, dict) else None
             history_dir = find_history_dir(run_dir, project_root)
 
             num_tests = count_tests(test_dir)
             num_prompts = count_prompts(history_dir)
             num_files = count_test_files(test_dir)
+            num_class_methods = count_class_methods(run_dir, project_root, target_class)
 
+            r['num_class_methods'] = str(num_class_methods)
             r['num_test_methods'] = str(num_tests)
             r['num_chatgpt_prompts'] = str(num_prompts)
             r['num_test_files'] = str(num_files)
@@ -235,7 +308,9 @@ def main():
                     r['project_root'] = os.path.basename(r['project_root'])
                 except Exception:
                     pass
-            writer.writerow(r)
+            # Remove fields that are not in fieldnames
+            row_to_write = {k: v for k, v in r.items() if k in fieldnames}
+            writer.writerow(row_to_write)
 
     print(f"Wrote annotated CSV to: {CSV_OUT}")
     return 0

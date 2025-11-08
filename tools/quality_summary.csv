@@ -25,3 +25,5 @@ timestamp,project_root,target_class,line_coverage_pct,mutation_score_pct,flaky_c
 2025-10-24T19:11:53.861192Z,/home/wangjeffrey4/commons-csv,CSVRecord,57.45,73.08,,,,/home/wangjeffrey4/commons-csv/target/pit-reports/mutations.xml,/home/wangjeffrey4/commons-csv/target/site/jacoco/jacoco.csv,
 2025-10-24T19:20:18.064795Z,/home/wangjeffrey4/commons-csv,CSVRecord,70.21,83.33,,,,/home/wangjeffrey4/commons-csv/target/pit-reports/mutations.xml,/home/wangjeffrey4/commons-csv/target/site/jacoco/jacoco.csv,
 2025-10-24T19:27:28.738689Z,/home/wangjeffrey4/commons-csv,CSVRecord,68.09,70,,,,/home/wangjeffrey4/commons-csv/target/pit-reports/mutations.xml,/home/wangjeffrey4/commons-csv/target/site/jacoco/jacoco.csv,
+2025-11-05T19:24:30.996732Z,/home/wangjeffrey4/commons-csv,ExtendedBufferedReader,79.73,68.75,,,,/home/wangjeffrey4/commons-csv/target/pit-reports/mutations.xml,/home/wangjeffrey4/commons-csv/target/site/jacoco/jacoco.csv,
+2025-11-06T23:38:39.798046Z,/home/wangjeffrey4/commons-csv,Lexer,0,0,,,,/home/wangjeffrey4/commons-csv/target/pit-reports/mutations.xml,/home/wangjeffrey4/commons-csv/target/site/jacoco/jacoco.csv,
