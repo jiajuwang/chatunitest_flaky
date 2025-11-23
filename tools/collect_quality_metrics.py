@@ -562,4 +562,3 @@ def write_csv_summary(result: dict, csv_path: str, target_class: Optional[str] =
 
 if __name__ == '__main__':
     main()
-

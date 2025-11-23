@@ -8,7 +8,7 @@ Usage: run from the workspace root. It reads `quality_summary - Copy.csv` in the
 same directory and writes `quality_summary - Copy.with_counts.csv` next to it.
 """
 
-# python3 annotate_counts.py
+# python3 annotate_csv_counts.py
 import csv
 import json
 import os
@@ -20,7 +20,6 @@ CSV_IN = ROOT / 'quality_summary - Copy.csv'
 CSV_OUT = ROOT / 'quality_summary - Copy.with_counts.csv'
 
 TEST_ANNOT_RE = re.compile(r"@(?:[A-Za-z0-9_]+\.)*Test\b")
-
 
 def _strip_java_comments(source: str) -> str:
     """Remove /* ... */ block comments and // line comments from Java source.
@@ -136,6 +135,42 @@ def count_prompts(history_dir: Path) -> int:
     return total
 
 
+def count_tokens(history_dir: Path, max_tokens: dict) -> tuple:
+    """Count total promptToken and responseToken from all records.json files.
+    
+    Args:
+        history_dir: The history directory containing records.json files
+        max_tokens: Dictionary with 'prompt' and 'response' keys to track maximums
+    
+    Returns:
+        Tuple of (total_prompt_tokens, total_response_tokens)
+    """
+    if history_dir is None or not history_dir.exists():
+        return (0, 0)
+    
+    total_prompt_tokens = 0
+    total_response_tokens = 0
+    for p in history_dir.rglob('records.json'):
+        try:
+            text = p.read_text()
+            data = json.loads(text)
+            
+            if isinstance(data, list):
+                for entry in data:
+                    if isinstance(entry, dict):
+                        pt = entry.get('promptToken', 0)
+                        rt = entry.get('responseToken', 0)
+                        max_tokens['prompt'] = max(pt, max_tokens['prompt'])
+                        max_tokens['response'] = max(rt, max_tokens['response'])
+                        total_prompt_tokens += pt
+                        total_response_tokens += rt
+        except Exception as e:
+            print(e)
+            continue
+    
+    return (total_prompt_tokens, total_response_tokens)
+
+
 def count_class_methods(run_dir: Path, project_name: str = None, target_class: str = None) -> int:
     """Count number of methods in the specific target class's class.json file.
     
@@ -207,6 +242,51 @@ def find_history_dir(run_dir: Path, project_name: str = None) -> Path:
     return None
 
 
+def count_public_methods(history_dir: Path, target_class: str = None) -> int:
+    """Count number of method folders for the target class in history directory.
+    
+    Args:
+        history_dir: The history directory containing class folders
+        target_class: The target class name to find
+    
+    Returns:
+        Number of method folders under the target class's folder, or 0 if not found
+    """
+    if history_dir is None or not history_dir.exists() or not target_class:
+        return 0
+    
+    # Look for class folders and match against target_class
+    # Need to check classMapping.json to map class folder names to actual class names
+    class_mapping = {}
+    parent_dir = history_dir.parent
+    mapping_file = parent_dir / 'classMapping.json'
+    
+    if mapping_file.exists():
+        try:
+            with mapping_file.open('r') as f:
+                class_mapping = json.load(f)
+        except Exception:
+            pass
+    
+    # Find the class folder that matches target_class
+    for class_folder in history_dir.iterdir():
+        if not class_folder.is_dir() or not class_folder.name.startswith('class'):
+            continue
+        
+        # Check if this class folder matches the target class
+        actual_class_name = class_folder.name
+        if class_folder.name in class_mapping:
+            actual_class_name = class_mapping[class_folder.name].get('className', class_folder.name)
+        
+        if actual_class_name == target_class:
+            # Count method folders in this class folder
+            method_count = sum(1 for p in class_folder.iterdir() 
+                             if p.is_dir() and p.name.startswith('method'))
+            return method_count
+    
+    return 0
+
+
 def main():
     if not CSV_IN.exists():
         print(f"Input CSV not found: {CSV_IN}")
@@ -230,16 +310,35 @@ def main():
             else:
                 fieldnames.append('num_class_methods')
         
+        # Add backup_folder column right after timestamp if not present
+        if 'backup_folder' not in fieldnames:
+            if 'timestamp' in fieldnames:
+                idx = fieldnames.index('timestamp') + 1
+                fieldnames.insert(idx, 'backup_folder')
+            else:
+                fieldnames.insert(0, 'backup_folder')
+        
         # Add other count columns at the end if not present
+        if 'num_public_methods' not in fieldnames:
+            fieldnames.append('num_public_methods')
+        if 'num_test_files' not in fieldnames:
+            fieldnames.append('num_test_files')
         if 'num_test_methods' not in fieldnames:
             fieldnames.append('num_test_methods')
         if 'num_chatgpt_prompts' not in fieldnames:
             fieldnames.append('num_chatgpt_prompts')
-        if 'num_test_files' not in fieldnames:
-            fieldnames.append('num_test_files')
+        if 'total_prompt_tokens' not in fieldnames:
+            fieldnames.append('total_prompt_tokens')
+        if 'total_response_tokens' not in fieldnames:
+            fieldnames.append('total_response_tokens')
         
         for r in reader:
             rows.append(r)
+
+    # Track max tokens across all rows
+    max_tokens = {'prompt': 0, 'response': 0}
+    max_public_methods = 0
+    total_public_methods = 0
 
     # Prefer mapping CSV rows to run folders by lexical sort order when possible,
     # and print the mapping between CSV entry (timestamp) and folder name.
@@ -263,11 +362,20 @@ def main():
             num_prompts = count_prompts(history_dir)
             num_files = count_test_files(test_dir)
             num_class_methods = count_class_methods(run_dir, project_root, target_class)
+            num_public_methods = count_public_methods(history_dir, target_class)
+            prompt_tokens, response_tokens = count_tokens(history_dir, max_tokens)
 
+            max_public_methods = max(max_public_methods, num_public_methods)
+            total_public_methods += num_public_methods
+
+            r['backup_folder'] = run_dir.name
             r['num_class_methods'] = str(num_class_methods)
+            r['num_public_methods'] = str(num_public_methods)
+            r['num_test_files'] = str(num_files)
             r['num_test_methods'] = str(num_tests)
             r['num_chatgpt_prompts'] = str(num_prompts)
-            r['num_test_files'] = str(num_files)
+            r['total_prompt_tokens'] = str(prompt_tokens)
+            r['total_response_tokens'] = str(response_tokens)
     else:
         if candidate_runs:
             print(f"Candidate run folder count ({len(candidate_runs)}) != CSV rows ({len(rows)}); falling back to timestamp mapping")
@@ -292,11 +400,20 @@ def main():
             num_prompts = count_prompts(history_dir)
             num_files = count_test_files(test_dir)
             num_class_methods = count_class_methods(run_dir, project_root, target_class)
+            num_public_methods = count_public_methods(history_dir, target_class)
+            prompt_tokens, response_tokens = count_tokens(history_dir, max_tokens)
 
+            max_public_methods = max(max_public_methods, num_public_methods)
+            total_public_methods += num_public_methods
+
+            r['backup_folder'] = run_dir.name if run_dir.exists() else ''
             r['num_class_methods'] = str(num_class_methods)
+            r['num_public_methods'] = str(num_public_methods)
+            r['num_test_files'] = str(num_files)
             r['num_test_methods'] = str(num_tests)
             r['num_chatgpt_prompts'] = str(num_prompts)
-            r['num_test_files'] = str(num_files)
+            r['total_prompt_tokens'] = str(prompt_tokens)
+            r['total_response_tokens'] = str(response_tokens)
 
     with CSV_OUT.open('w', newline='') as fh:
         writer = csv.DictWriter(fh, fieldnames=fieldnames)
@@ -313,6 +430,10 @@ def main():
             writer.writerow(row_to_write)
 
     print(f"Wrote annotated CSV to: {CSV_OUT}")
+    print(f"max prompt token: {max_tokens['prompt']}")
+    print(f"max response token: {max_tokens['response']}")
+    print(f"max public methods: {max_public_methods}")
+    print(f"total public methods: {total_public_methods}")
     return 0
 
 

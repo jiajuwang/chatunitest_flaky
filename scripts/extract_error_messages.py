@@ -17,6 +17,7 @@ Usage:
   # path
   # runs/run1
   # runs/run2
+  # python3 scripts/extract_error_messages.py attempts4.csv -o extracted_errors.txt
 """
 
 from __future__ import annotations

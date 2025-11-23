@@ -60,7 +60,7 @@ def find_attempts_in_history(root: str) -> List[Dict[str, str]]:
 			if not os.path.isdir(child_path):
 				continue
 			if child.startswith('history'):
-				candidates.append((child, child_path))
+				candidates.append((child, child_path, None))
 
 		# Also check one level deeper (packages)
 		for pkg in sorted(os.listdir(entry_path)):
@@ -72,10 +72,21 @@ def find_attempts_in_history(root: str) -> List[Dict[str, str]]:
 					continue
 				hist_path = os.path.join(pkg_path, child)
 				if os.path.isdir(hist_path):
-					candidates.append((child, hist_path))
+					candidates.append((child, hist_path, pkg_path))
 
 		# Now for each history path look for class*/method*/attempt4
-		for hist_name, hist_path in candidates:
+		for hist_name, hist_path, pkg_path in candidates:
+			# Load class name mapping if available
+			class_mapping = {}
+			if pkg_path:
+				mapping_file = os.path.join(pkg_path, 'classMapping.json')
+				if os.path.isfile(mapping_file):
+					try:
+						with open(mapping_file, 'r') as f:
+							class_mapping = json.load(f)
+					except Exception:
+						pass
+			
 			try:
 				for class_name in sorted(os.listdir(hist_path)):
 					if not class_name.startswith('class'):
@@ -83,6 +94,11 @@ def find_attempts_in_history(root: str) -> List[Dict[str, str]]:
 					class_path = os.path.join(hist_path, class_name)
 					if not os.path.isdir(class_path):
 						continue
+
+					# Get actual class name from mapping
+					actual_class_name = class_name
+					if class_name in class_mapping:
+						actual_class_name = class_mapping[class_name].get('className', class_name)
 
 					for method_name in sorted(os.listdir(class_path)):
 						if not method_name.startswith('method'):
@@ -99,6 +115,7 @@ def find_attempts_in_history(root: str) -> List[Dict[str, str]]:
 								'package': os.path.basename(os.path.dirname(hist_path)),
 								'history': hist_name,
 								'class': class_name,
+								'class_name': actual_class_name,
 								'method': method_name,
 								'attempt_dir': os.path.abspath(attempts4_path),
 							})
@@ -127,20 +144,19 @@ def main() -> None:
 		print(f"Error: {e}")
 		raise
 
-	# CSV output: single column 'path' with the exact attempt_dir paths
+	# CSV output: columns 'path' and 'class_name'
 	if args.csv:
-		rows = [r['attempt_dir'] for r in results]
 		if args.out:
 			with open(args.out, 'w', newline='') as f:
 				writer = csv.writer(f)
-				writer.writerow(['path'])
-				for p in rows:
-					writer.writerow([p])
+				writer.writerow(['path', 'class_name'])
+				for r in results:
+					writer.writerow([r['attempt_dir'], r['class_name']])
 		else:
 			writer = csv.writer(sys.stdout)
-			writer.writerow(['path'])
-			for p in rows:
-				writer.writerow([p])
+			writer.writerow(['path', 'class_name'])
+			for r in results:
+				writer.writerow([r['attempt_dir'], r['class_name']])
 		return
 
 	if args.json:
@@ -153,7 +169,7 @@ def main() -> None:
 
 	for r in results:
 		# human readable fallback
-		print(f"{r['attempt_dir']}  (top: {r['top_level']}/ package: {r.get('package')} history: {r['history']} class: {r['class']} method: {r['method']})")
+		print(f"{r['attempt_dir']}  (top: {r['top_level']}/ package: {r.get('package')} history: {r['history']} class: {r['class']} ({r['class_name']}) method: {r['method']})")
 
 
 if __name__ == '__main__':

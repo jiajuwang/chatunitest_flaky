@@ -1,19 +1,58 @@
 #!/usr/bin/env bash
 # Run test/mutation/flake pipeline for a given class and record outputs
-# Usage: tools/run_class_pipeline.sh <FullyQualifiedOrSimpleClassName> [optional-linux-path-to-copy]
+# Usage: tools/run_class_pipeline.sh <ClassName> [extra-linux-path] [--temperature=X] [--phaseType=Y]
+# With both parameters
+# #tools/run_class_pipeline.sh DefaultParser /tmp/chatunitest-info/commons-cli --temperature=0.8 --phaseType=SYMPROMPT
 
+# # With temperature only
+# tools/run_class_pipeline.sh DefaultParser --temperature=0.5
+
+# # With phaseType only
+# tools/run_class_pipeline.sh DefaultParser /tmp/chatunitest-info/commons-cli --phaseType=SYMPROMPT
+
+# # Without optional parameters (works as before)
+# tools/run_class_pipeline.sh DefaultParser /tmp/chatunitest-info/commons-cli
 set -eu
 
 if [ "$#" -lt 1 ]; then
-  echo "Usage: $0 <ClassName> [optional-linux-path-to-copy]"
+  echo "Usage: $0 <ClassName> [optional-linux-path-to-copy] [--temperature=X] [--phaseType=Y] [--backup-dir=PATH]"
   exit 2
 fi
 
 CLASS="$1"
-EXTRA_PATH="$2"
+shift
+EXTRA_PATH=""
+TEMPERATURE=""
+PHASE_TYPE=""
+BACKUP_BASE=""
+
+# Parse remaining args
+for arg in "$@"; do
+  case "$arg" in
+    --temperature=*)
+      TEMPERATURE="${arg#*=}"
+      ;;
+    --phaseType=*)
+      PHASE_TYPE="${arg#*=}"
+      ;;
+    --backup-dir=*)
+      BACKUP_BASE="${arg#*=}"
+      ;;
+    *)
+      # assume it's the extra path if not a flag
+      if [ -z "$EXTRA_PATH" ]; then
+        EXTRA_PATH="$arg"
+      fi
+      ;;
+  esac
+done
 ROOT_DIR="$(pwd)"
 TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
-BACKUP_DIR="$HOME/chatunitest_backups/$TIMESTAMP"
+# Use custom backup dir if specified, otherwise default to $HOME/chatunitest_backups
+if [ -z "$BACKUP_BASE" ]; then
+  BACKUP_BASE="$HOME/chatunitest_backups"
+fi
+BACKUP_DIR="$BACKUP_BASE/$TIMESTAMP"
 mkdir -p "$BACKUP_DIR"
 
 echo "Running pipeline for class: $CLASS"
@@ -25,12 +64,18 @@ run_cmd() {
   fi
 }
 
-# 1) generate chatunitest class
 # 1) install project (may compile and run default lifecycle)
 run_cmd mvn install
 
-# 2) generate chatunitest class
-run_cmd mvn chatunitest:class -DselectClass="$CLASS"
+# 2) generate chatunitest class with optional temperature and phaseType
+CHAT_OPTS="-DselectClass=$CLASS"
+if [ -n "$TEMPERATURE" ]; then
+  CHAT_OPTS="$CHAT_OPTS -Dtemperature=$TEMPERATURE"
+fi
+if [ -n "$PHASE_TYPE" ]; then
+  CHAT_OPTS="$CHAT_OPTS -DphaseType=$PHASE_TYPE"
+fi
+run_cmd mvn chatunitest:class $CHAT_OPTS
 
 # 2) copy chatunitest artifacts
 run_cmd mvn chatunitest:copy
@@ -52,10 +97,33 @@ run_cmd mvn test-compile org.pitest:pitest-maven:mutationCoverage || true
 
 # 7) run the collector script to compute metrics for the target class and append CSV
 PYCOLLECTOR="tools/collect_quality_metrics.py"
+QUALITY_CSV="tools/quality_summary.csv"
 if [ ! -f "$PYCOLLECTOR" ]; then
   echo "Collector script not found at $PYCOLLECTOR" >&2
 else
-  run_cmd python3 "$PYCOLLECTOR" --root "$ROOT_DIR" --target-class "$CLASS" --csv tools/quality_summary.csv || true
+  # Record line count before running collector
+  LINE_COUNT_BEFORE=0
+  if [ -f "$QUALITY_CSV" ]; then
+    LINE_COUNT_BEFORE=$(wc -l < "$QUALITY_CSV")
+  fi
+  
+  run_cmd python3 "$PYCOLLECTOR" --root "$ROOT_DIR" --target-class "$CLASS" --csv "$QUALITY_CSV" || true
+  
+  # Copy the new entry (last line) to backup base folder (not timestamp subfolder)
+  if [ -f "$QUALITY_CSV" ]; then
+    LINE_COUNT_AFTER=$(wc -l < "$QUALITY_CSV")
+    if [ "$LINE_COUNT_AFTER" -gt "$LINE_COUNT_BEFORE" ]; then
+      echo "Appending latest quality metrics entry to backup base folder CSV"
+      # CSV goes in backup base folder, shared across all runs
+      BACKUP_CSV="$BACKUP_BASE/quality_summary.csv"
+      # Copy just the header (first line) if backup CSV doesn't exist
+      if [ ! -f "$BACKUP_CSV" ]; then
+        head -n 1 "$QUALITY_CSV" > "$BACKUP_CSV" || true
+      fi
+      # Append the new entry (last line)
+      tail -n 1 "$QUALITY_CSV" >> "$BACKUP_CSV" || true
+    fi
+  fi
 fi
 
 echo "Collecting chatunitest-related directories into $BACKUP_DIR"
