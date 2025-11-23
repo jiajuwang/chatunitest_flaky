@@ -13,9 +13,9 @@ OS name: "linux", version: "6.6.87.2-microsoft-standard-wsl2", arch: "amd64", fa
 3. clone project repo (e.g., git clone https://github.com/apache/commons-csv)
 4. Copy tools/ directory in each project's folder (e.g., cp -r tools/ ~/commons-csv/)
 5. Need to modify pom.xml (Shanto will automate this process later), [do not introduce anything unlicensed files or dir]
-6. Run run_all.sh script to create folders for generated tests and history log in ~ () 
+6. Run run_all.sh script to create folders for generated tests and history log in ~ (OUTPUT: e.g., /home/shanto/CHATUNITEST_backups_0.2_SYMPROMPT/)
+5. Outputs will be save into These folders will be named with timestamp
+6. Copy scripts/  in folder above timestamp folders ( e.g., /home/shanto/CHATUNITEST_backups_0.2_SYMPROMPT/) using  cp -r scripts /home/shanto/CHATUNITEST_backups_0.2_SYMPROMPT/)
 
-5. These folders will be named with timestamp
-6. Put scripts/ in timestamp folders
-7. Inside the timestamp folders, run python3 scripts/annotate_csv_counts.py to generate a summary CSV (need to copy the existing CSV inside the timestamp folder first)
+7. Inside the folde above timestamp folders, run python3 scripts/annotate_csv_counts.py to generate a summary CSV (need to copy the existing CSV inside the timestamp folder first)
 8. The result csv's name is quality_summary - Copy.with_counts.csv
