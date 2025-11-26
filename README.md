@@ -16,6 +16,13 @@ OS name: "linux", version: "6.6.87.2-microsoft-standard-wsl2", arch: "amd64", fa
 6. Run run_all.sh script to create folders for generated tests and history log in ~ (OUTPUT: e.g., /home/shanto/CHATUNITEST_backups_0.2_SYMPROMPT/)
 5. Outputs will be save into These folders will be named with timestamp
 6. Copy scripts/  in folder above timestamp folders ( e.g., /home/shanto/CHATUNITEST_backups_0.2_SYMPROMPT/) using  cp -r scripts /home/shanto/CHATUNITEST_backups_0.2_SYMPROMPT/)
+7. Run the following command: ```bash parsing_result_for_chatunit_test.sh```
+OR
 
 7. Inside the folde above timestamp folders, run python3 scripts/annotate_csv_counts.py to generate a summary CSV (need to copy the existing CSV inside the timestamp folder first)
 8. The result csv's name is quality_summary - Copy.with_counts.csv
+
+
+cp -r chatunitest_flaky/scripts/ all_results_chatunittest_symprompt_testpilot_CSVParser_set_4/CHATUNITEST_backups_0.2_default/
+cd all_results_chatunittest_symprompt_testpilot_CSVParser_set_4/CHATUNITEST_backups_0.2_default/
+
