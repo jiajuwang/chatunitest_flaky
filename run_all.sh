@@ -5,7 +5,7 @@ echo "=== Running all tests (3 rounds) ==="
 
 # for i in {1..3}; do
 echo "--- Round $i ---"
-
+cp -r chatunitest_flaky/tools/ commons-cli
 # commons-cli tests
 #cd commons-cli
 #
